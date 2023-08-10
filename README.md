@@ -1,4 +1,4 @@
-# Encriptador de Texto
+# Encriptador de Texto 💻
 
 > ¿Qué es un encriptador de texto?
 
@@ -8,8 +8,15 @@ Un encriptador de texto cifra y oculta un mensaje mezclando sus letras de manera
 
 Como primer proyecto, tenemos el Desafío 'Challenge One Principiante en Programación' - Construye un Encriptador de Texto para el Programa Oracle Next Education.
 
-![Encriptador](https://github.com/YuDiCC/ChallengeOne_Encriptador_de_Texto/blob/main/imagenes/escritorio.jpeg)
-![Encriptador-movil](https://github.com/YuDiCC/ChallengeOne_Encriptador_de_Texto/blob/main/imagenes/movil.png){width=50px}
+## Versión Escritorio
+
+<img src="https://github.com/YuDiCC/ChallengeOne_Encriptador_de_Texto/blob/main/imagenes/escritorio.jpeg" alt="Encriptador"/>
+
+## Versión Móvil
+
+<p align="center">
+  <img src="https://github.com/YuDiCC/ChallengeOne_Encriptador_de_Texto/blob/main/imagenes/movil.png" alt="Imagen de ejemplo" width="30%"/>
+</p>
 
 
 
