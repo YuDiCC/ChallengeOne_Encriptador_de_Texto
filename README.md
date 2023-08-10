@@ -2,11 +2,15 @@
 
 > ¿Qué es un encriptador de texto?
 
-Un encriptador de texto cifra y ocultan un mensaje mezclando sus letras de manera especial, esto ocasiona que se vea como un rompecabezas, porque solo veríamos palabras revueltas que no podríamos entender si no usaramos un Desencriptador que nos ayuda a traducirlo.
+Un encriptador de texto cifra y oculta un mensaje mezclando sus letras de manera especial, lo que hace que parezca un rompecabezas. Solo veríamos palabras revueltas que no podríamos entender si no usáramos un Desencriptador que nos ayude a traducirlo.
 
 > Acerca del Proyecto
 
-Como primer proyecto tenemos el Desafío 'Challenge One Principiante en Programacíon' - Construye un Encriptador de Texto para el Programa Oracle Next Education.
+Como primer proyecto, tenemos el Desafío 'Challenge One Principiante en Programación' - Construye un Encriptador de Texto para el Programa Oracle Next Education.
 
-![Encriptador]()
+![Encriptador](https://github.com/YuDiCC/ChallengeOne_Encriptador_de_Texto/blob/main/imagenes/escritorio.jpeg)
+![Encriptador-movil](https://github.com/YuDiCC/ChallengeOne_Encriptador_de_Texto/blob/main/imagenes/movil.png){width=50px}
+
+
+
 
