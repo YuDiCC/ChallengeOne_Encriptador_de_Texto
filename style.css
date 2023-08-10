@@ -1,0 +1,175 @@
+* {
+    font-weight: 400;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Goldman', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body{
+    background-image: url(imagenes/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 8%;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.section-1, .section-2{
+    flex-basis: 200px;
+    margin: 5% 1% 2% 1%;
+}
+
+textarea::selection {
+    background-color: transparent;
+}
+
+.text-area, .mensaje {
+    color: white;
+    margin-top: 2%;
+    text-transform: lowercase;
+    border: none;
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: 0 0 0px #00f2ff, 0 0 10px #00f2ff, 
+    0 0 15px #00f2ff, 0 0 0px #00f2ff;   
+}
+
+::placeholder {
+    color: white;
+}
+
+.text-area:focus, .mensaje:focus {
+    outline: none;
+}
+
+.text-area{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+
+}
+
+.mensaje:focus{
+    background-image: none;
+}
+
+.mensaje {
+    background: white;
+    background-image: url("imagenes/Muñeco.svg");
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.botones, .botones-mensaje {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 18px;
+}
+
+.btn-desencriptar, .btn-encriptar, .btn-copiar{
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-desencriptar {
+    background: #d8dfe8;
+    border: 1px solid #d8dfe8;
+    color: #0a3871;
+}
+
+.btn-encriptar{
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    color: white;
+}
+
+.btn-copiar, #icon-copiar{
+background-color: transparent;
+border: none;
+font-size:xx-large;
+color: #d8dfe8;
+}
+
+.informacion {
+    padding: 20px;
+    color: #bdcedf;
+    font-size: small;
+}
+
+#icon-info{
+    margin-right: 5px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.derechos-de-autor{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.redesSociales{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi{
+    color: white;
+    font-size: large;
+    margin: 0 10px 0 10px;
+}
+
+a:visited{
+    color: white;
+}
+
+/*NOTIFICACION*/
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.notification.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.notification-title {
+    font-size: 10px;
+    margin: 0;
+}
