@@ -8,6 +8,8 @@ Un encriptador de texto cifra y oculta un mensaje mezclando sus letras de manera
 
 Como primer proyecto, tenemos el Desafío 'Challenge One Principiante en Programación' - Construye un Encriptador de Texto para el Programa Oracle Next Education.
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yudi-aleyda-calan-chan-a40154277/) 
+
 ## Versión Escritorio
 
 <img src="https://github.com/YuDiCC/ChallengeOne_Encriptador_de_Texto/blob/main/imagenes/escritorio.jpeg" alt="Encriptador"/>
