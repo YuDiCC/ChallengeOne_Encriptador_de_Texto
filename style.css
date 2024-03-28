@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --color-fondo: 001329;
+    --color-primario: #d8dfe8;
+    --color-secundario: #0a3871;
+    --color-terciario: white;
+  }
+
 * {
-    font-weight: 400;
-    font-size: 14px;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 14px; 
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -14,7 +21,7 @@ html, body{
 }
 
 body{
-    background-color:#001329;
+    background-color: var(--color-fondo);
     background-image: url(imagenes/fondo.webp);
     background-size: contain;
     background-repeat: repeat;
@@ -24,7 +31,6 @@ body{
 
 .logo {
     padding-top: 10px;
-    margin-left: 10px;
     width: 8%;
 }
 
@@ -41,7 +47,7 @@ main{
 
 
 .text-area, .mensaje {
-    color: white;
+    color: var(--color-terciario);
     text-transform: lowercase;
     border: none;
     border-radius: 24px;
@@ -51,24 +57,23 @@ main{
 }
 
 ::placeholder {
-    color: white;
+    color: var(--color-terciario);
 }
 
 .text-area:focus, .mensaje:focus {
     outline: none;
 }
 
-.text-area{
+.text-area, .mensaje{
+    width: 410px;
+    height: 250px;
     background-color: transparent;
     backdrop-filter: blur(10px);
 
 }
 
 .mensaje {
-    background: white;
     background-image: url(imagenes/Muñeco.webp);
-    background-color: transparent;
-    backdrop-filter: blur(30px);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -88,37 +93,34 @@ main{
 }
 
 .btn-desencriptar {
-    background: #d8dfe8;
-    border: 1px solid #d8dfe8;
-    color: #0a3871;
+    background: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    color: var(--color-secundario);
 }
 
 .btn-encriptar{
-    background-color: #0a3871;
-    border: 1px solid #0a3871;
-    color: white;
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+    color: var(--color-primario);
 }
 
 .btn-copiar, #icon-copiar, .btn-borrar, #icon-borrar{
 background-color: transparent;
 border: none;
 font-size:xx-large;
-color: #d8dfe8;
+color: var(--color-primario);
 }
 
 .informacion {
     padding: 20px;
-    color: #bdcedf;
+    color: var(--color-primario);
     font-size: small;
 }
 
-#icon-info{
-    margin-right: 5px;
-}
 
 footer{
     text-align: center;
-    color: white;
+    color: var(--color-terciario);
     margin-top: 10px;
 }
 
@@ -128,20 +130,15 @@ footer{
 }
 
 .redesSociales{
-    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 i{
-    color: white;
+    color: var(--color-terciario);
     font-size: 25px;
-    margin: 0 10px;
-}
-
-a:visited{
-    color: white;
+    padding: 10px;
 }
 
 /*NOTIFICACION*/
@@ -150,7 +147,7 @@ a:visited{
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #f2f2f2;
+    background-color: var(--color-terciario);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
@@ -173,14 +170,9 @@ a:visited{
 
 /* MEDIA QUERYS*/
 
-/*Desktop*/
+/*Desktop
 @media screen and (min-width:1024px) {
-    .text-area, .mensaje{
-        width: 410px;
-        height: 250px;
-    }
-    
-}
+} */
 
 /*Tablet*/
 @media screen and (min-width:768px) and (max-width:1023px){
@@ -193,10 +185,6 @@ a:visited{
         background-repeat: no-repeat;
     }
 
-    .text-area, .mensaje{
-        width: 400px;
-        height: 250px;
-    }
 }
 
 /*Movil*/
@@ -215,8 +203,6 @@ a:visited{
         font-size: 12px;
         width: 100px;
         height: 30px;
-        border-radius: 12px;
-        cursor: pointer;
     }
     .text-area, .mensaje{
         width: 250px;

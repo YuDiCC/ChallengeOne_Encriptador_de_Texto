@@ -9,7 +9,8 @@ const matrizCodigo = [
     ["i", "imes"],
     ["a", "ai"],
     ["o", "ober"],
-    ["u", "ufat"]
+    ["u", "ufat"],
+    ["ñ", "nyux"]
 ];
 
 // 'La letra "e" es convertida para "enter"'
@@ -17,10 +18,10 @@ const matrizCodigo = [
 // 'La letra "a" es convertida para "ai"'
 // 'La letra "o" es convertida para "ober"'
 // 'La letra "u" es convertida para "ufat"'
-
+// 'La letra "ñ" es convertida para "nyux"'
 
 function tieneCaracteresEsp(texto) {
-    const regex = /^[a-z\s]+$/;
+    const regex = /^[a-z\sñ]+$/;
     return !regex.test(texto);
 }
 
@@ -69,13 +70,12 @@ function btnDesencriptador() {
 }
 
 function desencriptar(stringDesEncriptada) {
-    matrizCodigo.forEach(([original, reemplazo]) => {
-        stringDesEncriptada = stringDesEncriptada.replaceAll(reemplazo, original);
-    });
-    return stringDesEncriptada;
+    let textoDesencriptado = stringDesEncriptada;
+            matrizCodigo.forEach(([original, reemplazo]) => {
+                textoDesencriptado = textoDesencriptado.split(reemplazo).join(original);
+            });
+            return textoDesencriptado;
 }
-
-
 
 btnCopiar.addEventListener("click", function () {
     mensaje.select();
