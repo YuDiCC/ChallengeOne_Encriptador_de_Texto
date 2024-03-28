@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto || YuDiCC</title>
+    <meta name="description" content="Este es un encriptador de texto desarrollado por YuDiCC. Convierte texto ingresado a través de reglas predefinidas.">
+    <meta name="keywords" content="encriptador de texto, encriptación, desencriptación, seguridad, YuDiCC">
+    <meta name="author" content="Yudi Calan Chan">
+    <link rel="icon" href="imagenes/icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat+Alternates&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <script src="https://kit.fontawesome.com/1da14e9f64.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header>
-        <img class="logo" src="imagenes/Logo.svg" alt="logo de alura" title="Logo de alura">
+        <img class="logo" src="imagenes/Logo.webp" alt="Logo de Alura" title="Logo de alura">
     </header>
     
     <main>
         <section class="section-1">
-            <textarea class="text-area" cols="32" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea class="text-area" cols="32" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
 
             <div class="botones">
                 <button class="btn-encriptar" onclick="btnEncriptador()">Encriptar</button>
+                
                 <button class="btn-desencriptar" onclick="btnDesencriptador()">Desencriptar</button>
             </div>
         </section>
@@ -31,8 +31,9 @@
             <textarea class="mensaje" cols="32" rows="10" readonly></textarea>
             
             <div class="botones-mensaje">
-                <button class="btn-copiar" title="copiar texto" onclick="copiar()"><i class="fa-regular fa-paste" id="icon-copiar"></i></button>
-                <button class="btn-borrar" title="borrar texto" onclick="borrar()"><i class="bi bi-trash" id="icon-borrar"></i></button>
+                <button class="btn-copiar" title="Copiar texto" onclick="copiar()"><i class="fa-regular fa-paste" id="icon-copiar"></i></button>
+                
+                <button class="btn-borrar" title="Borrar texto" onclick="borrar()"><i class="fa-regular fa-trash-can" id="icon-borrar"></i></button>
             </div>
             
         </section>
@@ -40,13 +41,13 @@
 
     <div class="notification">
         <div class="notification-content">
-            <h4 class="notification-title">Texto copiado</h4>
+            <h2 class="notification-title">Texto copiado</h2>
         </div>
     </div>
 
     <div>
         <div>
-            <h6 class="informacion"><i class="fa-solid fa-circle-info" id="icon-info" title="Información de uso"></i> Solo letras minúsculas y sin acentos</h6>
+            <h3 class="informacion"><i class="fa-solid fa-circle-info" id="icon-info" title="Información de uso"></i> Solo letras minúsculas y sin acentos</h3>
         </div>
     </div>
 
@@ -56,23 +57,24 @@
         <div class="redesSociales">
             
             <a href="https://github.com/YuDiCC" target="_blank">
-                <i class="bi bi-github"></i>
+                <i class="fa-brands fa-github" title="Github"></i>
             </a>
 
             <a href="https://www.linkedin.com/in/yudicc/" target="_blank">
-                <i class="bi bi-linkedin"></i>
+                <i class="fa-brands fa-linkedin" title="Linkedin"></i>
             </a>
 
             <a href="https://www.instagram.com/ale_calan04/" target="_blank">
-                <i class="bi bi-instagram"></i>
+                <i class="fa-brands fa-instagram" title="Instagram"></i>
             </a>
 
             <a href="mailto:7243@itescam.edu.mx" target="_blank">
-                <i class="bi bi-envelope-at"></i>
+                <i class="fa-regular fa-envelope" title="Correo electrónico"></i>
             </a>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1da14e9f64.js" crossorigin="anonymous"></script>
 </body>
 </html>
