@@ -113,7 +113,7 @@ color: var(--color-primario);
 
 .informacion {
     padding: 20px;
-    color: var(--color-primario);
+    color: var(--color-terciario);
     font-size: small;
 }
 
