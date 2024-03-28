@@ -37,4 +37,5 @@ La página web cuenta con dos secciones principales:
 - Encriptación y desencriptación de texto mediante la sustitución de letras por palabras clave específicas.
 - Notificación visual cuando se copia el texto resultante.
 - Advertencia al intentar borrar el texto ingresado y resultante para confirmar la acción.
+- Advertencia en caso de que el usuario ingrese texto con caracteres especiales o acento; Si permite la letra ñ.
 
