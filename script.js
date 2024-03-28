@@ -20,7 +20,7 @@ const matrizCodigo = [
 
 
 function tieneCaracteresEsp(texto) {
-    const regex = /^[a-z]+$/;
+    const regex = /^[a-z\s]+$/;
     return !regex.test(texto);
 }
 
