@@ -17,9 +17,9 @@ Este proyecto consiste en una página web que ofrece la funcionalidad de encript
     <th>Versión Móvil</th>
   </tr>
   <tr>
-    <td><img src="https://github.com/YuDiCC/ChallengeOne_Encriptador_de_Texto/blob/main/imagenes/escritorio.png" alt="Encriptador" width="600px"/></td>
+    <td><img src="https://github.com/YuDiCC/ChallengeOne_Encriptador_de_Texto/blob/main/imagenes/pantallas/escritorio.png" alt="Encriptador" width="600px"/></td>
     <td><p align="center">
-  <img src="https://github.com/YuDiCC/ChallengeOne_Encriptador_de_Texto/blob/main/imagenes/movil.png" alt="Imagen de ejemplo" width="200px"/>
+  <img src="https://github.com/YuDiCC/ChallengeOne_Encriptador_de_Texto/blob/main/imagenes/pantallas/movil.png" alt="Imagen de ejemplo" width="200px"/>
 </p></td>
   </tr>
 </table>
