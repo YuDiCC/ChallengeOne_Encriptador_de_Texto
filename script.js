@@ -10,7 +10,6 @@ const matrizCodigo = [
     ["a", "ai"],
     ["o", "ober"],
     ["u", "ufat"],
-    ["ñ", "nyux"]
 ];
 
 // 'La letra "e" es convertida para "enter"'
@@ -18,7 +17,6 @@ const matrizCodigo = [
 // 'La letra "a" es convertida para "ai"'
 // 'La letra "o" es convertida para "ober"'
 // 'La letra "u" es convertida para "ufat"'
-// 'La letra "ñ" es convertida para "nyux"'
 
 function tieneCaracteresEsp(texto) {
     const regex = /^[a-z\sñ]+$/;
